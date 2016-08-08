@@ -2,7 +2,6 @@ package com.example.howell.webcamforcompany;
 
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.adapter.VideoSourceListAdapter;
 import com.howell.db.DBManager;
 import com.howell.ksoap.VideoSource;

@@ -2,7 +2,6 @@ package com.example.howell.webcamforcompany;
 
 import java.util.Set;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.InternetDeviceCatalogReq;
 import com.howell.ksoap.InternetDeviceCatalogRes;
 import com.howell.ksoap.SoapManager;

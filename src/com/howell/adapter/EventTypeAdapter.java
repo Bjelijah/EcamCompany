@@ -2,7 +2,7 @@ package com.howell.adapter;
 
 import java.util.List;
 
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

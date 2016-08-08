@@ -3,7 +3,6 @@ package com.example.howell.webcamforcompany;
 import java.io.File;
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ehlib.HackyViewPager;
 import com.howell.utils.FileUtils;
 import com.howell.utils.PhoneConfig;

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.adapter.VideoSourceListAdapter;
 import com.howell.ehlib.GroupRefreshListView;
 import com.howell.ehlib.GroupRefreshListView.OnRefreshListener;

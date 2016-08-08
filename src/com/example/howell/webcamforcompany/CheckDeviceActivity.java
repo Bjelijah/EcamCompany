@@ -1,6 +1,5 @@
 package com.example.howell.webcamforcompany;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.SoapManager;
 import com.howell.ksoap.SystemHealthStatisticsReq;
 import com.howell.ksoap.SystemHealthStatisticsRes;

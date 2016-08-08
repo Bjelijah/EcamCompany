@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.SoapManager;
 import com.howell.ksoap.SystemFaultReport;
 import com.howell.ksoap.SystemFaultReportCatalogReq;

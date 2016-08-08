@@ -2,7 +2,7 @@ package com.howell.adapter;
 
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 import com.howell.ksoap.VideoSourceGroup;
 
 import android.content.Context;

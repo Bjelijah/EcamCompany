@@ -5,12 +5,11 @@ import java.util.ArrayList;
 
 import com.example.howell.webcamforcompany.Const;
 import com.example.howell.webcamforcompany.PlayerActivity;
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 import com.howell.db.DBManager;
 import com.howell.ehlib.GroupRefreshListView;
 import com.howell.ksoap.VideoSource;
 import com.howell.ksoap.VideoSourceGroup;
-import com.howell.utils.NetWorkUtil;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -29,7 +28,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * @author 霍之昊 

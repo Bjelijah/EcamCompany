@@ -2,7 +2,6 @@ package com.example.howell.webcamforcompany;
 
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ehlib.MyListViewWithFoot;
 import com.howell.ehlib.MyListViewWithFoot.OnRefreshListener;
 import com.howell.ksoap.Notice;

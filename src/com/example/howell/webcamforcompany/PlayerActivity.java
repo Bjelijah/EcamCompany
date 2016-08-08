@@ -2,14 +2,12 @@ package com.example.howell.webcamforcompany;
 
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.VideoSource;
 import com.howell.render.YV12Renderer;
 import com.howell.utils.DetectIfHasFrameUtils;
 import com.howell.utils.PhoneConfig;
 import com.howell.utils.VideoInviteUtils;
 
-import android.R.bool;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;

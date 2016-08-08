@@ -2,19 +2,16 @@ package com.howell.utils;
 
 import java.util.Random;
 
-import android.annotation.SuppressLint;
-import android.util.Base64;
-import android.util.Log;
-import android.widget.Toast;
-
-import com.example.howell.webcamforcompany.PlayerActivity;
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.NATServerRes;
 import com.howell.ksoap.SoapManager;
 import com.howell.ksoap.VideoSourceInviteReq;
 import com.howell.ksoap.VideoSourceInviteRes;
 import com.howell.ksoap.VideoSourceTeardownReq;
 import com.howell.ksoap.VideoSourceTeardownRes;
+
+import android.annotation.SuppressLint;
+import android.util.Base64;
+import android.util.Log;
 
 @SuppressLint("NewApi")
 public class VideoInviteUtils {

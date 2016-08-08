@@ -3,7 +3,6 @@ package com.example.howell.webcamforcompany;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.ksoap.DeviceIOInputChannelCatalogReq;
 import com.howell.ksoap.DeviceIOInputChannelCatalogRes;
 import com.howell.ksoap.DeviceIOOutputChannelCatalogReq;

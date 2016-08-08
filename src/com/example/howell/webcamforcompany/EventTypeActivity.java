@@ -2,7 +2,6 @@ package com.example.howell.webcamforcompany;
 
 import java.util.Arrays;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.adapter.EventTypeAdapter;
 
 import android.app.Activity;

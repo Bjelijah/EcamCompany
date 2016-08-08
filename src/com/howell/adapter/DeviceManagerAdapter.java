@@ -3,7 +3,7 @@ package com.howell.adapter;
 import java.util.ArrayList;
 
 import com.example.howell.webcamforcompany.EventTypeActivity;
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 import com.howell.ehlib.GroupRefreshListView;
 import com.howell.ksoap.Device;
 

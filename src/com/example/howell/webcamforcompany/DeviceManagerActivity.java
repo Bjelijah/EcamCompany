@@ -2,7 +2,6 @@ package com.example.howell.webcamforcompany;
 
 import java.util.ArrayList;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.adapter.DeviceManagerAdapter;
 import com.howell.ehlib.GroupRefreshListView;
 import com.howell.ehlib.GroupRefreshListView.OnRefreshListener;

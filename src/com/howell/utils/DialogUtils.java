@@ -1,6 +1,6 @@
 package com.howell.utils;
 
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

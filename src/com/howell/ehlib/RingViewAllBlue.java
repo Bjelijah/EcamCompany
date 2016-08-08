@@ -1,5 +1,5 @@
 package com.howell.ehlib;
-import com.example.howell.webcamforcompanyofqyg.R;
+import com.example.howell.webcamforcompany.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

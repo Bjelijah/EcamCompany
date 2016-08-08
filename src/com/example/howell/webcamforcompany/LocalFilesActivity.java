@@ -8,7 +8,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.howell.webcamforcompanyofqyg.R;
 import com.howell.utils.PhoneConfig;
 import com.howell.utils.ScaleImageUtils;
 

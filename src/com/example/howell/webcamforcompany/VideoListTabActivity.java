@@ -1,7 +1,5 @@
 package com.example.howell.webcamforcompany;
 
-import com.example.howell.webcamforcompanyofqyg.R;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
