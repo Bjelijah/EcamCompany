@@ -23,6 +23,8 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -34,11 +36,42 @@ import cn.jpush.android.api.TagAliasCallback;
 
 public class LoginActivity extends Activity implements OnClickListener,TagAliasCallback,Const{
 	
+	
+	private final static int MSG_GET_LOGIN_ID = 0x00;
+	
 	private Button btnLogin;
 	private EditText etAccount,etPassword/*,etNetdeviceId*/;
 	private SoapManager mSoapManager;
 	private Dialog waitDialog;
 	private SharedPreferences sharedPreferences;
+	
+	
+	private Handler handler = new Handler(){
+
+		@Override
+		public void handleMessage(Message msg) {
+			
+			switch (msg.what) {
+			case MSG_GET_LOGIN_ID:
+				if (msg.obj instanceof UserLoginRes) {
+					foo((UserLoginRes)msg.obj);
+				}else{
+					Log.e("123", "msg obj error");
+				}
+				
+			
+				break;
+
+			default:
+				break;
+			}
+			
+			
+			super.handleMessage(msg);
+		}
+		
+	};
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -209,10 +242,13 @@ public class LoginActivity extends Activity implements OnClickListener,TagAliasC
                     //如果登录平台 先获取internetid
                     System.out.println("userLoginReq.getInternetDeviceId():"+userLoginReq.getInternetDeviceId());
                     if(userLoginReq.getUserType().equals("InternetUser")){
-	                    InternetDeviceCatalogReq internetDeviceCatalogReq = new InternetDeviceCatalogReq();
-	                    internetDeviceCatalogReq.setSession(res.getSession());
-	                    InternetDeviceCatalogRes internetDeviceCatalogRes =mSoapManager.getInternetDeviceCatalogRes(internetDeviceCatalogReq);
-	                    mSoapManager.setInternetDeviceId(internetDeviceCatalogRes.getInternetDevices().get(0).getId());
+	                  
+	                    Message msg = new Message();
+	                    msg.what = MSG_GET_LOGIN_ID;
+	                    msg.obj = res;
+                    	
+	                    handler.sendMessage(msg);
+                    
                     }
                     
 					Intent intent = new Intent (LoginActivity.this,CamTabActivity.class);
@@ -298,4 +334,17 @@ public class LoginActivity extends Activity implements OnClickListener,TagAliasC
 		//ExampleUtil.showToast(logs, getApplicationContext());
 	}
 
+	private void foo(final UserLoginRes res){//add by cbj because httpClient used to run in main thread.. 
+		Log.i("123", "foo");
+		new Thread(){
+			public void run() {
+				 InternetDeviceCatalogReq internetDeviceCatalogReq = new InternetDeviceCatalogReq();
+		          internetDeviceCatalogReq.setSession(res.getSession());
+		          InternetDeviceCatalogRes internetDeviceCatalogRes =mSoapManager.getInternetDeviceCatalogRes(internetDeviceCatalogReq);
+		          mSoapManager.setInternetDeviceId(internetDeviceCatalogRes.getInternetDevices().get(0).getId());
+			};
+		}.start();
+	}
+	
+	
 }
